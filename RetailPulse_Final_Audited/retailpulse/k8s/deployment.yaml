@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: retailpulse
+  labels: {app: retailpulse}
+spec:
+  replicas: 2
+  selector:
+    matchLabels: {app: retailpulse}
+  template:
+    metadata:
+      labels: {app: retailpulse}
+    spec:
+      containers:
+        - name: dashboard
+          image: retailpulse:1.0.0        # replace with your registry image
+          ports: [{containerPort: 8501}]
+          resources:
+            requests: {cpu: "250m", memory: "512Mi"}
+            limits: {cpu: "1", memory: "2Gi"}
+          readinessProbe:
+            httpGet: {path: /_stcore/health, port: 8501}
+            initialDelaySeconds: 15
+          livenessProbe:
+            httpGet: {path: /_stcore/health, port: 8501}
+            initialDelaySeconds: 30
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata: {name: retailpulse}
+spec:
+  scaleTargetRef: {apiVersion: apps/v1, kind: Deployment, name: retailpulse}
+  minReplicas: 2
+  maxReplicas: 6
+  metrics:
+    - type: Resource
+      resource: {name: cpu, target: {type: Utilization, averageUtilization: 70}}

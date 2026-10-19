@@ -1,0 +1,10 @@
+{
+  "run": "segmentation",
+  "time": "2026-10-19 09:16:56",
+  "params": {
+    "k": 4
+  },
+  "metrics": {
+    "silhouette": 0.3487267636073832
+  }
+}

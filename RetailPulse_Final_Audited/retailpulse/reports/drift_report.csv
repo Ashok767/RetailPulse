@@ -1,0 +1,14 @@
+feature,psi,ks_p_value,status
+tenure,1.2007,0.0,major drift
+recency,0.034,0.0909,stable
+frequency,0.0301,0.0122,stable
+recency_ratio,0.029,0.0495,stable
+trend_30,0.0247,0.6067,stable
+monetary,0.0186,0.062,stable
+orders_90,0.0171,0.5717,stable
+avg_order_value,0.0143,0.3497,stable
+avg_categories,0.0136,0.8345,stable
+orders_prev30,0.0111,0.165,stable
+orders_30,0.01,0.623,stable
+avg_items,0.005,0.9749,stable
+avg_gap,0.0041,0.9951,stable

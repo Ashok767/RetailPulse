@@ -1,0 +1,13 @@
+{
+  "run": "churn",
+  "time": "2026-10-19 09:16:57",
+  "params": {
+    "model": "logistic_regression"
+  },
+  "metrics": {
+    "roc_auc": 0.7532793209876544,
+    "avg_precision": 0.4881701017407072,
+    "precision": 0.36893203883495146,
+    "recall": 0.7037037037037037
+  }
+}

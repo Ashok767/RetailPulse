@@ -1,0 +1,78 @@
+{
+  "data_source": "synthetic demo data",
+  "etl": {
+    "rows_raw": 54778,
+    "duplicates_removed": 274,
+    "null_rows_removed": 163,
+    "invalid_value_rows_removed": 161,
+    "unknown_product_rows_removed": 0,
+    "rows_clean": 54180
+  },
+  "forecast": {
+    "model_wape": 0.5519521877385184,
+    "naive_lag_wape": 0.7467222884386174,
+    "naive_mean_wape": 0.5649795675123446,
+    "model_mae": 2.205180407202938,
+    "total_level_wape": 0.14216686212178473,
+    "total_level_naive_mean_wape": 0.15415886259152053,
+    "weekly_product_wape": 0.21652107722544753,
+    "weekly_product_naive_mean_wape": 0.22258641239570917,
+    "test_start": "2026-09-03",
+    "test_end": "2026-09-30",
+    "train_rows": 19830,
+    "total_level_comparison_wape": {
+      "gradient_boosting (ours)": 0.14216686212178473,
+      "seasonal_naive_7d": 0.2520858164481526
+    },
+    "skipped_optional_models": [
+      "prophet",
+      "lstm"
+    ]
+  },
+  "segmentation": {
+    "silhouette_by_k": {
+      "3": 0.3482840801980055,
+      "4": 0.3487267636073832,
+      "5": 0.336832010219068,
+      "6": 0.31791008962311396
+    },
+    "silhouette_chosen": 0.3487267636073832
+  },
+  "churn": {
+    "best_model": "logistic_regression",
+    "models": {
+      "logistic_regression": {
+        "roc_auc": 0.7532793209876544,
+        "avg_precision": 0.4881701017407072,
+        "precision": 0.36893203883495146,
+        "recall": 0.7037037037037037
+      },
+      "gradient_boosting": {
+        "roc_auc": 0.6881751543209876,
+        "avg_precision": 0.41390781150502814,
+        "precision": 0.5172413793103449,
+        "recall": 0.2777777777777778
+      }
+    },
+    "churn_rate": 0.22120285423037717,
+    "n_customers": 981,
+    "train_snapshot": "2026-08-01",
+    "label_window_days": 60
+  },
+  "inventory": {
+    "OK": 20,
+    "Reorder now": 8,
+    "Stockout risk": 2
+  },
+  "drift": {
+    "demand": {
+      "psi": 0.0139,
+      "status": "stable",
+      "recent_days": 60
+    },
+    "features_with_major_drift": [
+      "tenure"
+    ]
+  },
+  "runtime_seconds": 2.0
+}

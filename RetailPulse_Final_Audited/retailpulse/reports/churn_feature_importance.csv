@@ -1,0 +1,14 @@
+feature,importance
+frequency,0.0486
+avg_gap,0.0269
+orders_30,0.0206
+orders_90,0.0146
+orders_prev30,0.0144
+recency_ratio,0.0133
+monetary,0.006
+tenure,0.0042
+avg_categories,0.0019
+trend_30,0.0011
+recency,-0.0003
+avg_order_value,-0.0009
+avg_items,-0.0021

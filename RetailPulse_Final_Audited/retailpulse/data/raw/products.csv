@@ -1,0 +1,31 @@
+product_id,category,price,cost,lead_time_days,stock_on_hand
+P001,Beverages,5.21,3.84,8,75
+P002,Beverages,4.04,3.2,11,122
+P003,Beverages,5.51,3.48,10,95
+P004,Beverages,4.94,3.17,8,28
+P005,Beverages,2.83,1.89,13,117
+P006,Snacks,3.94,2.35,9,36
+P007,Snacks,3.4,1.98,3,25
+P008,Snacks,3.47,2.32,12,103
+P009,Snacks,1.82,1.1,9,81
+P010,Snacks,2.63,1.89,10,51
+P011,Dairy,3.11,2.05,9,38
+P012,Dairy,4.78,3.62,9,31
+P013,Dairy,3.93,2.85,4,83
+P014,Dairy,4.47,2.81,9,90
+P015,Dairy,3.33,2.52,12,115
+P016,Personal Care,6.5,4.88,6,41
+P017,Personal Care,10.1,6.53,10,159
+P018,Personal Care,4.7,2.92,3,69
+P019,Personal Care,13.1,9.44,7,105
+P020,Personal Care,10.95,6.41,8,44
+P021,Home & Kitchen,32.26,19.36,14,67
+P022,Home & Kitchen,19.34,10.67,5,36
+P023,Home & Kitchen,39.06,29.17,6,62
+P024,Home & Kitchen,36.58,26.2,7,22
+P025,Home & Kitchen,32.91,23.9,14,48
+P026,Electronics,59.06,44.01,13,104
+P027,Electronics,106.68,70.91,3,15
+P028,Electronics,32.67,22.61,5,53
+P029,Electronics,52.0,30.42,12,185
+P030,Electronics,144.53,83.63,3,22

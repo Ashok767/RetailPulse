@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+metadata: {name: retailpulse}
+spec:
+  type: LoadBalancer
+  selector: {app: retailpulse}
+  ports: [{port: 80, targetPort: 8501}]
+---
+# Scheduled retraining (nightly 02:00) - automated ETL + model refresh
+apiVersion: batch/v1
+kind: CronJob
+metadata: {name: retailpulse-retrain}
+spec:
+  schedule: "0 2 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          restartPolicy: OnFailure
+          containers:
+            - name: pipeline
+              image: retailpulse:1.0.0
+              command: ["python", "scripts/run_pipeline.py"]

@@ -1,0 +1,29 @@
+{
+  "run": "forecast",
+  "time": "2026-10-19 09:16:56",
+  "params": {
+    "model": "HistGradientBoosting(poisson)",
+    "horizon_days": "2026-09-30"
+  },
+  "metrics": {
+    "model_wape": 0.5519521877385184,
+    "naive_lag_wape": 0.7467222884386174,
+    "naive_mean_wape": 0.5649795675123446,
+    "model_mae": 2.205180407202938,
+    "total_level_wape": 0.14216686212178473,
+    "total_level_naive_mean_wape": 0.15415886259152053,
+    "weekly_product_wape": 0.21652107722544753,
+    "weekly_product_naive_mean_wape": 0.22258641239570917,
+    "test_start": "2026-09-03",
+    "test_end": "2026-09-30",
+    "train_rows": 19830,
+    "total_level_comparison_wape": {
+      "gradient_boosting (ours)": 0.14216686212178473,
+      "seasonal_naive_7d": 0.2520858164481526
+    },
+    "skipped_optional_models": [
+      "prophet",
+      "lstm"
+    ]
+  }
+}

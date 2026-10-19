@@ -1,0 +1,8 @@
+{
+  "rows_raw": 54778,
+  "duplicates_removed": 274,
+  "null_rows_removed": 163,
+  "invalid_value_rows_removed": 161,
+  "unknown_product_rows_removed": 0,
+  "rows_clean": 54180
+}
